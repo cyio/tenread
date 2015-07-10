@@ -17,6 +17,13 @@ angular.module('TenRead.Controllers', [])
 
         popup.initSites = [
             {
+                "isShow"  : true,
+                "icon"    : "http://static.zhihu.com/static/favicon.ico",
+                "title"   : "知乎",
+                "url"     : "http://www.zhihu.com/",
+                "selector": ".content>h2>a",
+            },
+            {
                 "name"    : "startup news",
                 "url"     : "http://news.dbanotes.net/",
                 "icon"    : "http://news.dbanotes.net/logo.png",
@@ -58,7 +65,42 @@ angular.module('TenRead.Controllers', [])
                 "name"    : "v2ex",
                 "url"     : "http://www.v2ex.com/?tab=hot",
                 "selector": "span.item_title > a"
-            }
+            },            
+            {
+                "isShow"  : true,
+                "icon"    : "http://wanqu.co/static/images/favicons/favicon-32x32.png",
+                "title"   : "湾区日报",
+                "url"     : "http://wanqu.co/issues/",
+                "selector": "li.list-group-item>a",
+            },
+            {
+                "isShow"  : true,
+                "icon"    : "http://cili003.com/favicon.ico",
+                "title"   : "最新美剧",
+                "url"     : "http://cili003.com/",
+                "selector": ".w > .list-item > dd > .b > a",
+            }, 
+            {
+                "isShow"  : true,
+                "icon"    : "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7g00n3nj204g056wef.jpg",
+                "title"   : "Linux - Reddit",
+                "url"     : "http://www.reddit.com/r/linux",
+                "selector": "#siteTable .title.may-blank",
+            }, 
+            {
+                "isShow"  : true,
+                "icon"    : "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7eqg2rqj204g04ggli.jpg",
+                "title"   : "JavaScript - Reddit",
+                "url"     : "http://www.reddit.com/r/javascript",
+                "selector": "#siteTable .title.may-blank",
+            }, 
+            {
+                "isShow"  : true,
+                "icon"    : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico",
+                "title"   : "前端开发 - 微信",
+                "url"     : "http://weixin.sogou.com/weixin?query=%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91&fr=sgsearch&type=2&w=01015002&oq=%E5%89%8D%E7%AB%AF&ri=0&sourceid=sugg&stj=0%3B4%3B0%3B0&stj2=0&stj0=0&stj1=4&hp=40&hp1=&sut=7597&sst0=1436421786079&lkt=0%2C0%2C0",
+                "selector": ".txt-box > h4 >a",
+            }, 
         ];
 
         popup.sites = JSON.parse(localStorage.getItem("sites")) || [];
@@ -96,7 +138,7 @@ angular.module('TenRead.Controllers', [])
                     $scope.$apply(function () {
                         var parsedData = $(data).find(site.selector);
                         $scope.popup.parsedData = [];
-                        for (var i = 0, max = 10; i < max; i++) {
+                        for (var i = 0, max = 12; i < max; i++) {
                             var article = {
                                 title: $.trim($(parsedData[i]).text()),
                                 href : $(parsedData[i]).attr("href")
@@ -127,7 +169,7 @@ angular.module('TenRead.Controllers', [])
 
         popup.sync = function (article) {
             chrome.tabs.create({url: article.href, active: false}, function () {
-                $.post('http://tenread.wtser.com/api/sync', article, function (d) {
+                $.post('', article, function (d) {
                     console.log(JSON.parse(d).visited)
                 })
             });
