@@ -17,11 +17,11 @@ angular.module('TenRead.Controllers', [])
 
         popup.initSites = [
             {
-                "isShow"  : true,
-                "icon"    : "http://static.zhihu.com/static/favicon.ico",
-                "title"   : "知乎",
+                "name"   : "知乎",
+                "icon"    : "http://static.zhihu.com/static/favicon.ico",                
                 "url"     : "http://www.zhihu.com/",
                 "selector": ".content>h2>a",
+                "isShow"  : true
             },
             {
                 "name"    : "startup news",
@@ -45,12 +45,11 @@ angular.module('TenRead.Controllers', [])
                 "isShow"  : true
             },
             {
-                "isShow"  : true,
+                "name"   : "solidot",
                 "icon"    : "http://www.solidot.org/favicon.ico",
-                "title"   : "solidot",
                 "url"     : "http://www.solidot.org/",
                 "selector": ".bg_htit>h2>a",
-                "name"    : "solidot"
+                "isShow"  : true
             },
             {
                 "isShow"  : true,
@@ -60,46 +59,46 @@ angular.module('TenRead.Controllers', [])
                 "selector": ".title>a"
             },
             {
-                "isShow"  : true,
-                "icon"    : "http://www.v2ex.com/static/img/icon_rayps_64.png",
                 "name"    : "v2ex",
+                "icon"    : "http://www.v2ex.com/static/img/icon_rayps_64.png",
                 "url"     : "http://www.v2ex.com/?tab=hot",
-                "selector": "span.item_title > a"
+                "selector": "span.item_title > a",
+                "isShow"  : true,
             },            
             {
-                "isShow"  : true,
+                "name"   : "湾区日报",
                 "icon"    : "http://wanqu.co/static/images/favicons/favicon-32x32.png",
-                "title"   : "湾区日报",
                 "url"     : "http://wanqu.co/issues/",
                 "selector": "li.list-group-item>a",
+                "isShow"  : true
             },
             {
-                "isShow"  : true,
-                "icon"    : "http://cili003.com/favicon.ico",
-                "title"   : "最新美剧",
+                "name"   : "最新美剧",
+                "icon"    : "http://cili003.com/favicon.ico",                
                 "url"     : "http://cili003.com/",
                 "selector": ".w > .list-item > dd > .b > a",
+                "isShow"  : true
             }, 
             {
-                "isShow"  : true,
-                "icon"    : "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7g00n3nj204g056wef.jpg",
-                "title"   : "Linux - Reddit",
+                "name"   : "Linux - Reddit",
+                "icon"    : "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7g00n3nj204g056wef.jpg",                
                 "url"     : "http://www.reddit.com/r/linux",
                 "selector": "#siteTable .title.may-blank",
+                "isShow"  : true
             }, 
             {
-                "isShow"  : true,
-                "icon"    : "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7eqg2rqj204g04ggli.jpg",
-                "title"   : "JavaScript - Reddit",
+                "name"  : "Linux - Reddit",
+                "icon"    : "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7eqg2rqj204g04ggli.jpg",                
                 "url"     : "http://www.reddit.com/r/javascript",
                 "selector": "#siteTable .title.may-blank",
+                "isShow"  : true
             }, 
-            {
-                "isShow"  : true,
+            {                
+                "name"   : "前端开发 - 微信",
                 "icon"    : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico",
-                "title"   : "前端开发 - 微信",
                 "url"     : "http://weixin.sogou.com/weixin?query=%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91&fr=sgsearch&type=2&w=01015002&oq=%E5%89%8D%E7%AB%AF&ri=0&sourceid=sugg&stj=0%3B4%3B0%3B0&stj2=0&stj0=0&stj1=4&hp=40&hp1=&sut=7597&sst0=1436421786079&lkt=0%2C0%2C0",
                 "selector": ".txt-box > h4 >a",
+                "isShow"  : true,
             }, 
         ];
 
@@ -138,7 +137,7 @@ angular.module('TenRead.Controllers', [])
                     $scope.$apply(function () {
                         var parsedData = $(data).find(site.selector);
                         $scope.popup.parsedData = [];
-                        for (var i = 0, max = 12; i < max; i++) {
+                        for (var i = 0, max = 13; i < max; i++) {
                             var article = {
                                 title: $.trim($(parsedData[i]).text()),
                                 href : $(parsedData[i]).attr("href")

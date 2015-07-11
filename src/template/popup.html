@@ -17,7 +17,7 @@
                 data-ng-repeat="site in popup.sites track by $index"
                 data-ng-click="popup.show( $index )"
                     >
-                <img src="{{ site.icon }}">
+                <img src="{{ site.icon }}" title="{{ site.name }}">
             </li>
 
         </ul>
@@ -25,7 +25,6 @@
 
     <div class="pure-g control">
         <div class="pure-u-1-2">
-
         </div>
         <div class="pure-u-1-2">
             <a target="_blank" href="#/option/list" class="action"><i class="fa fa-cog"></i></a>

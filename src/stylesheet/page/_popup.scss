@@ -27,7 +27,7 @@
       min-height: 385px;
 
       li {
-        margin: 6px 4px;
+        margin: 0;
 
         a {
           text-decoration: none;
@@ -48,12 +48,15 @@
           }
         }
       }
+      li:nth-child(odd){
+        background-color: #F5F5F5;
+      }
     }
 
     .tabs {
       width: 40px;
       background: #f1f1f1;
-      max-height: 386px;
+      max-height: 456px;
       display: block;
 
       overflow-y: scroll;

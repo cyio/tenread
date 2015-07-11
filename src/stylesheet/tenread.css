@@ -33,7 +33,7 @@ a {
       border-right: 1px solid #ddd;
       min-height: 385px; }
       .popup .content .news-list li {
-        margin: 6px 4px; }
+        margin: 0; }
         .popup .content .news-list li a {
           text-decoration: none;
           color: #333;
@@ -47,10 +47,12 @@ a {
             color: #cccccc; }
           .popup .content .news-list li a:hover {
             background-color: #DDDDDD; }
+      .popup .content .news-list li:nth-child(odd) {
+        background-color: #F5F5F5; }
     .popup .content .tabs {
       width: 40px;
       background: #f1f1f1;
-      max-height: 386px;
+      max-height: 456px;
       display: block;
       overflow-y: scroll; }
       .popup .content .tabs li {
@@ -92,7 +94,6 @@ a {
 @-webkit-keyframes loading {
   0% {
     transform: rotate(0deg); }
-
   100% {
     transform: rotate(360deg); } }
 
@@ -106,9 +107,11 @@ a {
   width: 32px;
   float: left;
   margin-right: 1rem; }
+
 .mainview .pagination {
   display: inline-block;
   margin: 0; }
+
 .mainview .form-modal {
   position: absolute;
   background: #fff;
@@ -118,6 +121,7 @@ a {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%); }
+
 .mainview .site-info div {
   margin-top: 1rem; }
   .mainview .site-info div:hover .subscribe {
@@ -125,8 +129,10 @@ a {
     margin-top: 10px; }
   .mainview .site-info div:hover .site-name {
     display: none; }
+
 .mainview .site-info .subscribe {
   display: none; }
+
 .mainview .site-info img {
   width: 44px;
   height: 44px;
@@ -134,5 +140,8 @@ a {
   overflow: hidden;
   float: left;
   margin-right: 0.5rem; }
+
 .mainview .site-info .site-name {
   line-height: 44px; }
+
+/*# sourceMappingURL=tenread.css.map */
