@@ -80,25 +80,39 @@ angular.module('TenRead.Controllers', [])
                 "isShow"  : true
             }, 
             {
-                "name"   : "Linux - Reddit",
+                "name"    : "Linux - Reddit",
                 "icon"    : "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7g00n3nj204g056wef.jpg",                
                 "url"     : "http://www.reddit.com/r/linux",
                 "selector": "#siteTable .title.may-blank",
                 "isShow"  : true
             }, 
             {
-                "name"  : "Linux - Reddit",
+                "name"    : "Linux - Reddit",
                 "icon"    : "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7eqg2rqj204g04ggli.jpg",                
                 "url"     : "http://www.reddit.com/r/javascript",
                 "selector": "#siteTable .title.may-blank",
                 "isShow"  : true
             }, 
             {                
-                "name"   : "前端开发 - 微信",
+                "name"    : "前端开发 - 微信",
                 "icon"    : "http://res.wx.qq.com/mmbizwap/zh_CN/htmledition/images/icon/common/favicon22c41b.ico",
                 "url"     : "http://weixin.sogou.com/weixin?query=%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91&fr=sgsearch&type=2&w=01015002&oq=%E5%89%8D%E7%AB%AF&ri=0&sourceid=sugg&stj=0%3B4%3B0%3B0&stj2=0&stj0=0&stj1=4&hp=40&hp1=&sut=7597&sst0=1436421786079&lkt=0%2C0%2C0",
                 "selector": ".txt-box > h4 >a",
                 "isShow"  : true,
+            }, 
+            {
+                "name"    : "国际纵览 - 纽约时报中文网",
+                "icon"    : "http://d2qpqq35l60wq5.cloudfront.net/favicon.ico",                
+                "url"     : "http://d2qpqq35l60wq5.cloudfront.net/",
+                "selector": ".nytcn_headline a",
+                "isShow"  : true
+            }, 
+            {
+                "name"    : "精选 - 传送门",
+                "icon"    : "http://chuansong.me/favicon.ico",                
+                "url"     : "http://chuansong.me/select",
+                "selector": "a.question_link",
+                "isShow"  : true
             }, 
         ];
 

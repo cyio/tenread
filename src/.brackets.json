@@ -1,0 +1,20 @@
+{
+    "sass.enabled": false,
+    "sass.compiler": "libsass",
+    "path": {
+        "stylesheet/tenread.scss": {
+            "sass.enabled": true,
+            "sass.options": {
+                "includePaths": [
+                    "../stylesheet/page/"
+                ],
+                "outputDir": "../stylesheet/",
+                "imagePath": null,
+                "sourceComments": false,
+                "outputStyle": "nested"
+            },
+            "linting.collapsed": false,
+            "closeBrackets": true
+        }
+    }
+}
