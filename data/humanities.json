@@ -1,20 +1,32 @@
 [
   {
     "name": "简书",
-    "url": "http://www.jianshu.com/trending/now",
     "icon": "http://static.jianshu.io/assets/icon114-fcef1133c955e46bf55e2a60368f687b.png",
+    "url": "http://www.jianshu.com/trending/now",
     "selector": "h4>a"
   },
   {
+    "name": "豆瓣一刻",
     "icon": "http://img3.douban.com/dae/ps/logo_56-3ef03413a90e85f954c144ced276b089.png",
     "url": "http://thehours.jd-app.com/",
-    "selector": ".grid>a",
-    "name": "豆瓣一刻"
+    "selector": ".grid>a"
   },
   {
+    "name": "知乎日报",
     "icon": "http://daily.zhihu.com/favicon.ico",
     "url": "http://daily.zhihu.com/",
-    "selector": ".box>a",
-    "name": "知乎日报"
-  }
+    "selector": ".box>a"
+  },
+  {
+    "name": "我的知乎",
+    "icon": "http://static.zhihu.com/static/favicon.ico",
+    "url": "http://www.zhihu.com/",
+    "selector": ".content>h2>a"
+  },
+  {
+    "name": "国际纵览 - 纽约时报中文网",
+    "icon": "http://d2qpqq35l60wq5.cloudfront.net/favicon.ico",
+    "url": "http://d2qpqq35l60wq5.cloudfront.net/",
+    "selector": ".nytcn_headline a"
+  },
 ]
