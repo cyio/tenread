@@ -15,24 +15,24 @@
     "name": "最新美剧",
     "icon": "http://cili003.com/favicon.ico",
     "url": "http://cili003.com/",
-    "selector": ".w > .list-item > dd > .b > a",
+    "selector": ".w > .list-item > dd > .b > a"
   },
   {
     "name": "Linux - Reddit",
     "icon": "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7g00n3nj204g056wef.jpg",
     "url": "http://www.reddit.com/r/linux",
-    "selector": "#siteTable .title.may-blank",
+    "selector": "#siteTable .title.may-blank"
   },
   {
     "name": "JavaScript - Reddit",
     "icon": "http://ww3.sinaimg.cn/large/4e5d3ea7gw1ety7eqg2rqj204g04ggli.jpg",
     "url": "http://www.reddit.com/r/javascript",
-    "selector": "#siteTable .title.may-blank",
+    "selector": "#siteTable .title.may-blank"
   },
   {
     "name": "精选 - 传送门",
     "icon": "http://chuansong.me/favicon.ico",
     "url": "http://chuansong.me/select",
-    "selector": "a.question_link",
-    },
+    "selector": "a.question_link"
+    }
 ]
