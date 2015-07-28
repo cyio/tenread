@@ -59,7 +59,7 @@
     "icon": "http://www.blogsmithmedia.com/cn.engadget.com/media/favicon-96x96.png",
     "url": "http://cn.engadget.com/",
     "selector": ".h2>a"
-  }，
+  },
   {
     "name": "湾区日报",
     "icon": "http://wanqu.co/static/images/favicons/favicon-32x32.png",
