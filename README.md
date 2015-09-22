@@ -8,11 +8,9 @@
 
 Fork 此项目，修改 data 目录下的 *.json 并 pull request。
 
-## todo
-
-3. 改进添加自定义内容源的方法，参考adblock等
-
-4. 导入导出功能
+## 安装
+`git clone https://github.com/cyio/tenread.git`
+进入`src`文件夹，运行`bower install`，安装依赖包。然后在Chrome中加载即可。
 
 ## 使用扩展
 
